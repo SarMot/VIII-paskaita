@@ -2,27 +2,166 @@
 
     html {
        *font-size: 18px;
+        font-style: italic;
     }
 
     * {
-      box-sizing: border-box;
-    }
-    
+        box-sizing: border-box;
+    }     
+       
+
     body {
-      font-family: Arial;
-      padding: 10px;
-      background: #f1f1f1;
-      max-width: 1920px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding: 10px;
+        background: #f1f1f1;
+        max-width: 1920px;
     }
-    
-    /* Header/Blog Title */
-    .header {
-      padding: 30px;
-      text-align: center;
-      background: white;
+    .col-1 {
+        width: 8.33%;
     }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width:75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+
+    [class*="col-"] {
+        float:left;
+    }
+
+
+    .flex-conteiner{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .flex-item-1 { 
+        width: 100%;
+        height: 50px;
+        background-color: white;
+    }  
+
+    .flex-item-2 { 
+        width: 100%;
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .flex-item-3 { 
+        width: 15%;
+        height: 40px;
+        background-color: rgb(223, 245, 243);
+    }  
+
+   
+    .flex-item-4 { 
+        width: 15%;
+        height: 40px;
+        background-color: rgb(223, 245, 243);
+    }  
+
+    .flex-item-5 { 
+        width: 15%;
+        height: 40px;
+        background-color: rgb(223, 245, 243);
+    }  
+
+    .flex-item-6 { 
+        width: 15%;
+        height: 40px;
+        background-color: rgb(223, 245, 243);
+    }  
+
+    .flex-item-1 {
+        order: 1;
+    }
+
+    .flex-item-2 {
+        order: 2;
+    }
+
+    .flex-item-3 {
+        order: 3;
+    }
+
+    .flex-item-4 {
+        order: 4;
+    }
+
+    .flex-item-5 {
+        order: 5;
+    }
+
+    .flex-item-6 {
+        order: 6;
+    }
+
+    .flex-item-7 {
+        order: 7;
+    }
+
+    .flex-item-8 {
+        order: 8;
+    }
+
+
     
-    .header h1 {
+    .img {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .img-2 {
+        width: 100%;
+        padding: 20px;
+        height: 100px;
+    }
+      
+    h1 {
       font-size: 2.78rem;
       color: blueviolet;
     }
@@ -32,39 +171,22 @@
         font-size: 2.22rem;
         line-height: 1.5;
         color: aqua;
+    }
+
+    h5 {
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        color: red;
 
     }
     
-    /* Style the top navigation bar */
-    .topnav {
-      overflow: hidden;
-      background-color: #333;
-    }
-    
-    /* Style the topnav links */
-    .topnav a {
-      float: left;
-      display: block;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-    
-    /* Change color on hover */
-    .topnav a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-    
-    /* Create two unequal columns that floats next to each other */
-    /* Left column */
+             
     .leftcolumn {   
       float: left;
       width: 75%;
     }
     
-    /* Right column */
     .rightcolumn {
       float: left;
       width: 25%;
@@ -72,13 +194,7 @@
       padding-left: 20px;
     }
     
-    /* Fake image */
-    .fakeimg {
-      background-color: #aaa;
-      width: 100%;
-      padding: 20px;
-    }
-    
+          
     /* Add a card effect for articles */
     .card {
       background-color: white;
@@ -100,20 +216,38 @@
       background: #ddd;
       margin-top: 20px;
     }
+
+    [class *="flex-item-"] { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     
     /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1000px) {
+        html {
+            font-size: 14px;
+        }
       .leftcolumn, .rightcolumn {   
         width: 100%;
         padding: 0;
-      }
+       }
+             
     }
     
     /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-    @media screen and (max-width: 400px) {
-      .topnav a {
-        float: none;
-        width: 100%;
-      }
+    @media screen and (max-width: 720px) {
+        html {
+            font-size: 12px;
+        }
+        .flex-container {
+           flex-direction: column;
+           flex-wrap: wrap;
+        }   
+        [ class *="flex-item-"] {
+            width: 100%;
+            order: 1;
+        }
+
     }
 </style>
