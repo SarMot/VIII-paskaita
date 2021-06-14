@@ -72,10 +72,8 @@
     .flex-conteiner{
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+       
     }
-
-    
 
     .flex-item-1 { 
         width: 100%;
